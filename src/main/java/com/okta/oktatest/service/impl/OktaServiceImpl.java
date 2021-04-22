@@ -25,6 +25,7 @@ public class OktaServiceImpl implements OktaService {
         RestTemplate restTemplate = new RestTemplate();
         HttpHeaders httpHeaders = getHeaders();
 
+
         HttpEntity<String> httpEntity = new HttpEntity<>(httpHeaders);
         String url = Constants.OKTA_DOMAIN+"/api/v1/users?limit=200";
 
